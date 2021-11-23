@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel - Jquery Plugin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <h1>Welcome To Tech Memorise</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero delectus repudiandae tempore sint officiis odio.</p>
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1>Your True Tech Navigator</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero delectus repudiandae tempore sint officiis odio.</p>
+                <button>Comment</button>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h1>Your True Source of Learning Web Dev</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas eaque nobis ducimus voluptate molestiae corporis mollitia atque totam eligendi voluptatem vitae, quibusdam, vero delectus repudiandae tempore sint officiis odio.</p>
+                <button>Like & Share</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+</body>
+
+</html>
