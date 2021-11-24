@@ -655,7 +655,10 @@ body{
 .demo-form-banner .text-side a{
     display: none;
 }
-@media (min-width: 0) and (max-width: 475px){
+.input-alert{
+    display: none;
+}
+@media (min-width: 0) and (max-width: 575px){
     h1{
         font-weight: bold;
         font-size: 39px;
@@ -1125,7 +1128,5 @@ body{
         margin: 50px 36px!important;
         text-align: center;
     }
-    .input-alert{
-        display: none;
-    }
+    
 }
