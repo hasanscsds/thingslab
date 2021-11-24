@@ -1125,4 +1125,7 @@ body{
         margin: 50px 36px!important;
         text-align: center;
     }
+    .input-alert{
+        display: none;
+    }
 }
