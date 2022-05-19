@@ -15,6 +15,10 @@
 <!-- site icon -->
 <link rel="shortcut icon" href="./images/logo/thingslab..svg"/>
 
+<!-- owl carousel -->
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.css">
+
 <!-- fontawesome -->
 <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"/>
 
@@ -33,8 +37,8 @@
                     <img src="./images/logo/thingslab..svg" alt="logo">
                 </a>
                 
-                <ul class="home__page__navbar__nav nav">
-                    <li class="nav__item"><a class="nav__link" href="./products.html">Products</a></li>
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link active" href="./products.html">Products</a></li>
                     <li class="nav__item"><a class="nav__link" href="./pricing-and-features.html">Pricing & Features</a></li>
                     <li class="nav__item"><a class="nav__link" href="./advertising.html">Advertise</a></li>
                     <li class="nav__item"><a class="nav__link" href="./demo.html">Demo</a></li>
@@ -42,26 +46,59 @@
                     <li class="nav__item"><a class="nav__link" href="./login.html">Log In</a></li>
                     <li class="nav__item"><a class="nav__link btn link__btn" id="sign-up-btn" role="button" href="./signup.html">Sign Up</a></li>
                 </ul>
-                <!--
+                
                 <button id="hamburger" type="button">
                     <img src="./images/icons/hamburger.svg" alt="icon">
                 </button>
-                <ul class="resp-nav">
-                    <li class="nav-list"><a href="./home.html">Home</a></li>
-                    <li class="nav-list"><a href="./pricing-and-features.html">Pricing</a></li>
-                    <li class="nav-list"><a href="./products.html">Products</a></li>
-                    <li class="nav-list"><a href="./advertising.html">Advertise</a></li>
-                    <li class="nav-list"><a href="./contacts.html">Contact us</a></li>
-                    <li class="nav-list"><a href="./demo.html">Demo</a></li>
-                    <li class="nav-list"><div class="res-nav-line" href="./demo.html"></div></li>
-                    <li class="nav-list"><a href="./signup.html">Sign Up</a></li>
-                    <li class="nav-list"><a href="./login.html">Log In</a></li>
-                    <li class="nav-list"><a class="btnn" id="exit-btn" role="button" href="javascript:void(0)" onclick="closeNav()">
+                <ul class="res__nav">
+                    <li class="nav__item"><a href="./home.html">Home</a></li>
+                    <li class="nav__item"><a href="./pricing-and-features.html">Pricing</a></li>
+                    <li class="nav__item"><a href="./products.html">Products</a></li>
+                    <li class="nav__item"><a href="./advertising-start.html">Advertise</a></li>
+                    <li class="nav__item"><a href="./contacts.html">Contact us</a></li>
+                    <li class="nav__item"><a href="./demo.html">Demo</a></li>
+                    <li class="nav__item"><div class="res-nav-line" href="./demo.html"></div></li>
+                    <li class="nav__item"><a href="./signup.html">Sign Up</a></li>
+                    <li class="nav__item"><a href="./login.html">Log In</a></li>
+                    <li class="nav__item"><a class="btnn" id="exit-btn" role="button" href="javascript:void(0)" onclick="closeNav()">
                         <img src="./images/icons/exit.svg" alt="icon">
                     </a></li>
-                </ul>-->
+                </ul>
             </div>
-    
+            <div class="res__products__content content">
+                <div class="res__products__item">
+                    <div class="res__products__item__header">
+                        <img src="./images/icons/Group11.svg" alt="icon">
+                        <h3 class="label">Online Web App</h3>
+                    </div>
+                    <a href="./product — features.html" class="res__products__item__read__more">The next evolution of inventory management
+                    Achieve complete control of <span class="red">read more..</span></a>  
+                </div>
+                <div class="res__products__item">
+                    <div class="res__products__item__header">
+                        <img src="./images/icons/Outline.svg" alt="icon">
+                        <h3 class="label">IoT Device</h3>
+                    </div>
+                    <a href="./product — features.html" class="res__products__item__read__more">The next evolution of inventory management
+                    Achieve complete control of <span class="red">read more..</span></a>  
+                </div>
+                <div class="res__products__item">
+                    <div class="res__products__item__header">
+                        <img src="./images/icons/Group (12).svg" alt="icon">
+                        <h3 class="label">Offline Desktop App</h3>
+                    </div>
+                    <a href="./product — features.html" class="res__products__item__read__more">The next evolution of inventory management
+                    Achieve complete control of <span class="red">read more..</span></a>  
+                </div>
+                <div class="res__products__item">
+                    <div class="res__products__item__header">
+                        <img src="./images/icons/barcode (1) 1.svg" alt="icon">
+                        <h3 class="label">Barcode Scanners</h3>
+                    </div>
+                    <a href="./product — features.html" class="res__products__item__read__more">The next evolution of inventory management
+                    Achieve complete control of <span class="red">read more..</span></a>  
+                </div>
+            </div>
             <div class="products__content content">
                 <div class="img__side">
                     <img src="./images/banner/image 3.svg" alt="content-img">
@@ -78,15 +115,15 @@
             </div> 
         </div>
 
-        <div class="container">
-            <div class="content devices__content content">
+        <div class="devices__container container">
+            <div class="devices__content content">
                 <div class="text__side">
                     <h1 class="title">IoT Device</h1>
                     <h3 class="label">Internet Connected Counter Device</h3>
                     <ul class="device-functions">
-                        <li><span class="list__dot"></span> Online and Offline</li>
-                        <li><span class="list__dot"></span>No need to dedicate a computer for stock out management</li>
-                        <li><span class="list__dot"></span>Best fit for counting inventory</li>
+                        <li>Online and Offline</li>
+                        <li>No need to dedicate a computer for stock out management</li>
+                        <li>Best fit for counting inventory</li>
                     </ul>
                     <span class="price">₹6000</span>
                     <button class="btn" type="button">BUY NOW</button>
@@ -94,7 +131,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="offline__desktop__container container">
             <div class="offline-desktop-content content">
                 <div class="text__side">
                     <h1 class="title">Offline Desktop App</h1>
@@ -120,13 +157,11 @@
 
 
 
+    <!-- Js Plugins -->
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/5a91c59780.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script> 
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script> 
     <!-- Javascript end-->
 
 </body>

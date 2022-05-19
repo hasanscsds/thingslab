@@ -14,6 +14,10 @@
 <!-- site icon -->
 <link rel="shortcut icon" href="./images/logo/thingslab..svg"/>
 
+<!-- owl carousel -->
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.css">
+
 <!-- fontawesome -->
 <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"/>
 
@@ -27,50 +31,50 @@
     <!--page start-->
     <div id="pricing-features-page" class="page">
         <div class="features__and__pricing__container container">
-            <div class="home__page__navbar navbar">
+            <div class="navbar">
                 <a href="./home.html" class="home__page__navbar__logo logo">
                     <img src="./images/logo/thingslab..svg" alt="logo">
                 </a>
                 
-                <ul class="home__page__navbar__nav nav">
+                <ul class="nav">
                     <li class="nav__item"><a class="nav__link" href="./products.html">Products</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./pricing-and-features.html">Pricing & Features</a></li>
+                    <li class="nav__item"><a class="nav__link active" href="./pricing-and-features.html">Pricing & Features</a></li>
                     <li class="nav__item"><a class="nav__link" href="./advertising.html">Advertise</a></li>
                     <li class="nav__item"><a class="nav__link" href="./demo.html">Demo</a></li>
                     <li class="nav__item"><a class="nav__link" href="./contacts.html">Contact</a></li>
                     <li class="nav__item"><a class="nav__link" href="./login.html">Log In</a></li>
                     <li class="nav__item"><a class="nav__link btn link__btn" id="sign-up-btn" role="button" href="./signup.html">Sign Up</a></li>
                 </ul>
-                <!--
+                
                 <button id="hamburger" type="button">
                     <img src="./images/icons/hamburger.svg" alt="icon">
                 </button>
-                <ul class="resp-nav">
-                    <li class="nav-list"><a href="./home.html">Home</a></li>
-                    <li class="nav-list"><a href="./pricing-and-features.html">Pricing</a></li>
-                    <li class="nav-list"><a href="./products.html">Products</a></li>
-                    <li class="nav-list"><a href="./advertising.html">Advertise</a></li>
-                    <li class="nav-list"><a href="./contacts.html">Contact us</a></li>
-                    <li class="nav-list"><a href="./demo.html">Demo</a></li>
-                    <li class="nav-list"><div class="res-nav-line" href="./demo.html"></div></li>
-                    <li class="nav-list"><a href="./signup.html">Sign Up</a></li>
-                    <li class="nav-list"><a href="./login.html">Log In</a></li>
-                    <li class="nav-list"><a class="btnn" id="exit-btn" role="button" href="javascript:void(0)" onclick="closeNav()">
+                <ul class="res__nav">
+                    <li class="nav__item"><a href="./home.html">Home</a></li>
+                    <li class="nav__item"><a href="./pricing-and-features.html">Pricing</a></li>
+                    <li class="nav__item"><a href="./products.html">Products</a></li>
+                    <li class="nav__item"><a href="./advertising-start.html">Advertise</a></li>
+                    <li class="nav__item"><a href="./contacts.html">Contact us</a></li>
+                    <li class="nav__item"><a href="./demo.html">Demo</a></li>
+                    <li class="nav__item"><div class="res-nav-line" href="./demo.html"></div></li>
+                    <li class="nav__item"><a href="./signup.html">Sign Up</a></li>
+                    <li class="nav__item"><a href="./login.html">Log In</a></li>
+                    <li class="nav__item"><a class="btnn" id="exit-btn" role="button" href="javascript:void(0)" onclick="closeNav()">
                         <img src="./images/icons/exit.svg" alt="icon">
                     </a></li>
-                </ul>-->
+                </ul>
             </div> 
             
             
 
-            <div class="features__content">
+            <div class="features__items">
                 <div class="features__item">
                     <div class="features__item__img">
                         <img src="./images/cards/Group.svg" alt="card-img">
                     </div>
                     <div class="features__item__content">
-                        <h3 class="label">SMS to the customers</h3>
-                        <p class="text">SMS is an incredibly effective tool to reach customers. 
+                        <h3 class="features__item__content__label label">SMS to the customers</h3>
+                        <p class="features__item__content__text text">SMS is an incredibly effective tool to reach customers. 
                             Response rates compared to other media, like email, 
                             is really impressive.
                         </p>
@@ -82,8 +86,8 @@
                         <img src="./images/cards/real-time.svg" alt="card-img">
                     </div>
                     <div class="features__item__content">
-                        <h3 class="label">Real-time Inventory</h3>
-                        <p class="text">SMS is an incredibly effective tool to reach customers. 
+                        <h3 class="features__item__content__label label">Real-time Inventory</h3>
+                        <p class="features__item__content__text text">SMS is an incredibly effective tool to reach customers. 
                             Response rates compared to other media, like email, 
                             is really impressive.
                         </p>
@@ -95,8 +99,8 @@
                         <img src="./images/cards/surface1.svg" alt="card-img">
                     </div>
                     <div class="features__item__content">
-                        <h3 class="label">Stock Management</h3>
-                        <p class="text">SMS is an incredibly effective tool to reach customers. 
+                        <h3 class="features__item__content__label label">Stock Management</h3>
+                        <p class="features__item__content__text text">SMS is an incredibly effective tool to reach customers. 
                         Response rates compared to other media, like email, 
                         is really impressive.
                         </p>
@@ -108,8 +112,8 @@
                         <img src="./images/cards/Group2.svg" alt="card-img">
                     </div>
                     <div class="features__item__content">
-                        <h3 class="label">Customer Insights</h3>
-                        <p class="text">SMS is an incredibly effective tool to reach customers. 
+                        <h3 class="features__item__content__label label">Customer Insights</h3>
+                        <p class="features__item__content__text text">SMS is an incredibly effective tool to reach customers. 
                             Response rates compared to other media, like email, 
                             is really impressive.
                         </p>
@@ -121,8 +125,8 @@
                         <img src="./images/cards/barcode.svg" alt="card-img">
                     </div>
                     <div class="features__item__content">
-                        <h3 class="label">Dummy Barcode</h3>
-                        <p class="text">SMS is an incredibly effective tool to reach customers. 
+                        <h3 class="features__item__content__label label">Dummy Barcode</h3>
+                        <p class="features__item__content__text text">SMS is an incredibly effective tool to reach customers. 
                             Response rates compared to other media, like email, 
                             is really impressive.
                         </p>
@@ -130,45 +134,47 @@
                 </div>
             </div>
 
+<div class="pricing__content content">
+    <div class="pricing__content__header header">
+        <h2 class="pricing__content__header__title title">pricing</h2>
+        <p class="pricing__content__header__text res__text text">No hidden cost or surprises. Cancel or change your plan at any time.</p>
+    </div>
 
+    <div class="pricing__items">
+        <div class="pricing__item">
+            <p class="pricing__item__discount__text discount__text">Save 16% <span class="discount">at ₹416/month</span></p>
+            <p class="pricing__item__term__price term__price text"><span class="price">₹6000</span>/month</p>
 
-            <div class="pricing__content">
-                <div class="pricing__content__header header">
-                    <h2 class="pricing__content__header__title title">pricing</h2>
-                    <p class="pricing__content__header__text res__text">No hidden cost or surprises. Cancel or change your plan at any time.</p>
-                </div>
-                <div class="pricing__content__item">
-                    <p class="text">Save 16% at ₹416/month</p>
-                    <p class="term__price text"><span class="price">₹6000</span>/month</p>
+            <ul class="pricing__item__discount__device-functions device-functions">
+                <li>10,000 Messages</li>
+                <li>Transactional SMS Bills</li>
+                <li>Stock in out / Bulk upload</li>
+                <li>Correction Feature</li>
+                <li>Live inventory</li>
+                <li>Customers/Sales information</li>
+                <li>Dummy barcode creation</li>
+            </ul>
+            <button class="pricing__item__btn btn" type="button">buy now</button>
+        </div>
 
-                    <ul class="device-functions">
-                        <li>10,000 Messages</li>
-                        <li>Transactional SMS Bills</li>
-                        <li>Stock in out / Bulk upload</li>
-                        <li>Correction Feature</li>
-                        <li>Live inventory</li>
-                        <li>Customers/Sales information</li>
-                        <li>Dummy barcode creation</li>
-                    </ul>
-                    <button class="btn" type="button">buy now</button>
-                </div>
+        <div class="pricing__item">
+            <p class="pricing__item__discount__text discount__text">Save 16% <span class="discount">at ₹416/month</span></p>
+            <p class="pricing__item__term__price term__price text"><span class="price">₹6000</span>/month</p>
 
-                <div class="pricing__content__item">
-                    <p class="text">Save 16% at ₹416/month</p>
-                    <p class="term__price text"><span class="price">₹6000</span>/month</p>
-
-                    <ul class="device-functions">
-                        <li>10,000 Messages</li>
-                        <li>Transactional SMS Bills</li>
-                        <li>Stock in out / Bulk upload</li>
-                        <li>Correction Feature</li>
-                        <li>Live inventory</li>
-                        <li>Customers/Sales information</li>
-                        <li>Dummy barcode creation</li>
-                    </ul>
-                    <button class="btn" type="button">buy now</button>
-                </div>
-            </div>
+            <ul class="pricing__item__discount__device-functions device-functions">
+                <li>10,000 Messages</li>
+                <li>Transactional SMS Bills</li>
+                <li>Stock in out / Bulk upload</li>
+                <li>Correction Feature</li>
+                <li>Live inventory</li>
+                <li>Customers/Sales information</li>
+                <li>Dummy barcode creation</li>
+            </ul>
+            <button class="pricing__item__btn btn" type="button">buy now</button>
+        </div>
+    </div>
+</div>
+            
         </div>
     </div>
 
@@ -176,14 +182,11 @@
 
 
 
-    <script src="https://kit.fontawesome.com/5a91c59780.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script> 
-
-
-   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Js Plugins -->
+        <script src="./js/jQuery.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="https://kit.fontawesome.com/5a91c59780.js" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script> 
     <!-- Javascript end-->
 
 </body>
