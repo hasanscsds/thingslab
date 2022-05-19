@@ -54,6 +54,9 @@ h3{
 .res__title, .res__btn, .res__text, .res__img, .res__label{
     display: none;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .input__label{
     font-family: 'Gotham', sans-serif;
     text-transform: capitalize;
@@ -826,6 +829,7 @@ body{
 }
 .pricing__items{
     width: fit-content;
+    overflow: scroll;
     padding: 0 25px;
     display: flex;
     justify-content: center;
