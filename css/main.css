@@ -120,6 +120,7 @@ body{
     background: #E5E5E5;
 }
 .container{
+    overflow: hidden;
     height: 800px;
 }
 .content{
