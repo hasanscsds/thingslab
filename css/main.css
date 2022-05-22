@@ -43,6 +43,10 @@ h3{
     font-size: 18px;
     line-height: 130%;
 }
+.form{
+    width: 100%;
+    gap: 34px;
+}
 .label{
     margin: 15px 0 24px;
     font-style: normal;
@@ -92,6 +96,7 @@ input::placeholder{
 }
 .btn{
     width: fit-content;
+    margin: 10px 0;
     text-transform: uppercase;
     font-family: 'Gotham', sans-serif;
     font-style: normal;
@@ -124,7 +129,7 @@ body{
 }
 .container{
     overflow: hidden;
-    height: 800px;
+    height: 812px;
 }
 .content{
     width: 100%;
@@ -193,6 +198,10 @@ body{
 
 
 /*PRODUCTS START*/
+.products__content .text__side, .devices__content .text__side, .offline-desktop-content .text__side{
+    margin-top: 0!important;
+}
+
 .res__products__content{
     display: none;
 }
@@ -292,6 +301,9 @@ body{
 /*FEATURES END*/
 
 /*PRICING START*/
+.pricing__content{
+    display: inherit;
+}
 .header{
     width: 100%;
     text-align: center;
@@ -590,8 +602,12 @@ body{
     background-position: right top;
 }
 .sign__up__success__content__title, .success__content__title{
-    max-width: 51%;
+    max-width: 101%;
     font-size: 45px;
+}
+.sign__up__success__content__btn{
+    display:block;
+    margin: 50px 0;
 }
 .resend__link{
     display: none;
@@ -614,6 +630,7 @@ body{
         font-size: 19px;
     }
     .title{
+        margin: 15px auto;
         font-size: 39px;
         line-height: 50.7px;
     }
@@ -621,7 +638,12 @@ body{
         font-size: 1rem;
         line-height: 20.8px;
     }
+    .form{
+        width: 100%;
+    }
     .label{
+        margin: 15px auto;
+        text-align: center;
         font-size: 20px;
         color: var(--black_color);
     }
@@ -632,7 +654,7 @@ body{
         font-size: 14px;
         line-height: 13.4px;
         padding: 20px 50px;
-        margin: 0 auto!important;
+        margin: 0 auto;
     }
     .page{
         position: relative;
@@ -646,7 +668,11 @@ body{
     .content{
         height:85%;
         display: flex;
+        justify-content: center;
         padding: 25px;
+    }
+    .advertising__start__form__container, .demo__container, .contacts__form__container, .sign__up__success__container, .login__container, .sign__up__form__container, .sign__up__success__container{
+        height: fit-content;
     }
     .text__side{
         margin: 0;
@@ -691,7 +717,8 @@ body{
         color: rgba(255, 255, 255, 1);
     }
     .res__nav .nav__item .res-nav-line{
-        width: 40.8%;
+        margin: 0 auto;
+        width: 45.8%;
         height: 1px;
         background: var(--red_color);
     }
@@ -700,6 +727,8 @@ body{
     }
     /*NAVBAR END*/
 
+
+    /*HOME START*/
     .home__page__content{
         display: flex;
         flex-direction: column;
@@ -718,6 +747,10 @@ body{
         color: #263238;
         display: block;
     }
+    .home__page__res__btn{
+        margin: 0 auto!important;
+    }
+    /*HOME END*/
 
 /*PRODUCTS START*/
     .products__content, .offline__desktop__container, .devices__container, .barcode__scanners__container{
@@ -755,10 +788,12 @@ body{
     }
     .owl-carousel .owl-item img {
         display: block;
+        margin: 0 auto;
         width: 32.21%;
     }
     .owl-dots {
         width: fit-content;
+        margin: 0 auto;
         height: 12px;
     }
     .owl-dots button.owl-dot {
@@ -767,12 +802,25 @@ body{
         border-radius: 50%;
         background: rgba(253, 67, 90, 0.3);
     }
+    .owl-dots button.owl-dot:not(:last-child) {
+        margin-right: 8px
+    }
     .owl-dots button.owl-dot.active {
         width: 12px;
         height: 12px;
         transition-timing-function: ease;
         transition-duration: 0.1s;
         background: var(--red_color);
+    }
+    .product__features__content__label{
+        margin: 0!important;
+        text-align: start;
+    }
+    .res__products__item__read__more{
+        margin: 13px 0;
+    }
+    .product__features__content__text__side .device-functions{
+        margin: 10px 0;
     }
     .device-functions{
         padding: 0 0 0 5%;
@@ -786,11 +834,16 @@ body{
     .device-functions li:not(:last-child){
         margin-bottom: 13px;
     }
-    .product__features__content__text__side .btn{
+    .product__features__content__price{
+        margin: 30px auto;
+    }
+    .product__features__content__btn{
         display: block;
     }
-    .bach__btn{
-        width: fit-content;
+    .back__btn{
+        width: 100%;
+        margin: 0 auto!important;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Gotham', sans-serif;
@@ -819,7 +872,7 @@ body{
     flex-wrap: wrap;
 }
 .pricing__content__header {
-    margin: 40px auto 60px;
+    margin: 0 auto 60px;
 }
 .pricing__content__header__title{
     text-transform: capitalize;
@@ -830,11 +883,14 @@ body{
 .pricing__items{
     width: fit-content;
     overflow: scroll;
-    padding: 0 25px;
+    
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: nowrap;
     gap: 25px;
+}
+.pricing__items::-webkit-scrollbar {
+    display: hidden;
 }
 .pricing__item{
     min-width: 223px;
@@ -918,16 +974,18 @@ body{
 .demo__btn{
     display: none;
 }
-.demo__form__content .res__btn{
-}
 .line{
+    width: 100%;
+    margin: 20px auto;
 }
 .line__text{
+    margin: 0 8px;
     font-size: 20px;
+    font-weight: 700;
     line-height: 130%;
 }
 .red__line{
-    width: 390px;
+    width: 100%;
 }
 .demo__text{
     display: none;
@@ -937,12 +995,7 @@ body{
     font-size: 15px;
     line-height: 130%;
 }
-.form{
-    width: 100%;
-    gap: 34px;
-}
-.form .btn{
-}
+
 .input__label{
     font-size: 12px;
     line-height: 16px;
@@ -985,8 +1038,7 @@ body{
     background-position: right top;
 }
 .contacts__form__title{
-    max-width: 80%!important;
-    max-width: 100%;
+    max-width: 80%;
     text-align: center;
     font-size: 20px;
     line-height: 130%;
@@ -1004,8 +1056,6 @@ body{
     line-height: 16px;
     letter-spacing: 0.440991px;
 }
-.forgot__password__link{
-}
 .sign__up__success__content, .success__content{
     display: flex;
     flex-direction: column;
@@ -1017,10 +1067,13 @@ body{
     max-width: 51%;
     font-size: 45px;
 }
-.sign__up__success__content .login__link{
-}
+
 .resend__link{
     display: none;
+}
+.login__link{
+    margin: 0 auto;
+    text-align: center;
 }
 .advertising__start__form__content{
     display: flex;
@@ -1035,12 +1088,11 @@ body{
 .login__form__content, .sign__up__content{
     background: none;
 }
-.login__form__label{
-}
 .login__form, .sign__up__form{
     column-gap: 14px;
 }
 .control {
+    margin: 0 auto;
     padding-left: 30px;
     font-size: 12px;
     line-height: 16px;
@@ -1075,39 +1127,61 @@ body{
     line-height: 16px;
     letter-spacing: 0.440991px;
 }
+
+
 /*LOGIN FORM END*/
-.success__content{
+.success__content, .sign__up__success__content{
+    height: 812px;
     background: url("../images/banner/undraw_Powerful_re_frhr 1.png") no-repeat;
     background-size: contain;
-    background-position: 150%;
+    background-position: 150% 90%;
 }
+
 .success__content__text, .success__content__title{
     display: none;
 }
-.label{
-    text-align: center;
+.success__content .text__side{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.success__content__back__btn{
+    margin: 67px auto;
+}
+
+
+.sign__up__success__content{
+    justify-content: start;
 }
 .sign__up__success__content__title{
-    font-family: 'Gotham';
+    font-family: 'Gotham', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
-    /* or 26px */
     max-width: 100%;
-
-text-align: center;
-
-color: var(--black_color);
+    text-align: center;
+    color: var(--black_color);
 }
 .resend__link{
-    display: inherit;
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
 }
 .resend__link img{
+    margin: 8px;
 }
 .sign__up__success__content .btn{
     display: none;
 }
-.sign__up__success__content .login__link{
+.sign__up__success__content .text__side{
+    text-align: center;
 }
+.login__link{
+    text-align: center;
+    margin: 0 auto;
+}
+
 }
