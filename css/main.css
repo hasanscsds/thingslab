@@ -716,6 +716,9 @@ body{
     .res__nav .nav__item a{
         color: rgba(255, 255, 255, 1);
     }
+    .res__nav .nav__item .active{
+        color: var(--red_color);
+    }
     .res__nav .nav__item .res-nav-line{
         margin: 0 auto;
         width: 45.8%;
@@ -954,8 +957,7 @@ body{
     background-size: auto;
     background-position: right top;
 }
-.advertising__start__form__content .res__title{
-}
+
 .advertising__start__form__label{
     display: none;
 }
