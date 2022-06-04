@@ -3,15 +3,15 @@
 $("#hamburger").on("click", function() {
    var width = $(window).width();
    if (width < 580) {
-     $(".res__nav").toggleClass("active");
-   }
- });
- $(".res__nav .nav__item").on("click", function() {
-   var width = $(window).width();
-   if (width < 580) {
-     $(".res__nav").toggleClass("active");
-   }
- });
+      $(".res__nav").toggleClass("active");
+      }
+   });
+   $(".res__nav .nav__item").on("click", function() {
+      var width = $(window).width();
+      if (width < 580) {
+      $(".res__nav").toggleClass("active");
+      }
+   });
 
 //OWL CAROUSEL
 $('.owl-carousel').owlCarousel({
