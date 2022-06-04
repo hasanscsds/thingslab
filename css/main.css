@@ -619,7 +619,7 @@ body{
 
 
 /*RESPONSIVE 375PX START*/
-@media (min-width: 0) and (max-width: 479px){
+@media (min-width: 0) and (max-width: 479.99px){
     h1{
         font-size: 39px;
     }
