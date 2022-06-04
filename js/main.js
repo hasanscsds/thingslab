@@ -1,14 +1,18 @@
-$(document).ready(function() {
-   $("#hamburger").click(function(){
-      $(".res__nav").css("display", "inherit")
-   })
-   $("#exit-btn").click(function(){
-      $(".res__nav").css("display", "none")
-   })
-   $(".res__nav .nav__item").click(function(){
-      $(".res__nav").css("display", "none")
-   })
-});
+
+// Mobile menu dropdown
+$("#hamburger").on("click", function() {
+   var width = $(window).width();
+   if (width < 580) {
+     $(".res__nav").toggleClass("active");
+   }
+ });
+ $(".res__nav .nav__item").on("click", function() {
+   var width = $(window).width();
+   if (width < 580) {
+     $(".res__nav").toggleClass("active");
+   }
+ });
+
 //OWL CAROUSEL
 $('.owl-carousel').owlCarousel({
    loop:true,
