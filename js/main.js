@@ -5,6 +5,9 @@ $(document).ready(function() {
    $("#exit-btn").click(function(){
       $(".res__nav").css("display", "none")
    })
+   $(".res__nav .nav__item").click(function(){
+      $(".res__nav").css("display", "none")
+   })
 });
 //OWL CAROUSEL
 $('.owl-carousel').owlCarousel({

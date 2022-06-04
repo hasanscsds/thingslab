@@ -690,11 +690,15 @@ body{
         display: none;
     }
     .res__nav{
+        display: none;
+    }
+    .res__nav{
         width: 100vw;
         height: 100vh;
+        display: inherit;
         padding: 0;
         background: rgba(38, 50, 56, 1);
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 9999;
